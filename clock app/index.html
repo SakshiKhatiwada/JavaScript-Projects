@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- favicon icon -->
-    <link rel="icon" href="assets/alarm_clock.gif" size="16px*16px">
+    <link rel="icon" href="assets/clock.png" size="16px*16px">
     <title>Clock</title>
   </head>
   <body>
@@ -21,6 +21,7 @@
           <button class="tab-btn" data-tab="stopWatch">StopWatch</button>
           <button class="tab-btn" data-tab="timer">Timer</button>
         </div>
+        <!-- Alarm -->
         <div class="tab-content" id="alarm">
           <h1>Alarm</h1>
           <div class="alarm">
@@ -28,9 +29,9 @@
               type="datetime-local"
               id="alarmTime"
               name="alarm-time"
-              value="0000-00-12T00:00"
-              min="2023-04-12T00:00"
-              max="2023-12-12T00:00"
+              value="0000-00-12T00:00" 
+              min="2024-09-7T00:00"
+              max="2025-12-12T00:00"
               required
             />
             <br />
@@ -52,6 +53,7 @@
             <span id="ringingTime"></span>
           </div>
         </div>
+        <!-- Stop Watch -->
         <div class="tab-content hidden" id="stopWatch">
           <h1>Stop Watch</h1>
           <div class="stopWatchDisplay">00 : 00 : 00 : 000</div>
@@ -73,6 +75,7 @@
         <div class="timeStamps">
           <ul></ul>
         </div>
+        <!-- Timer -->
         <div class="tab-content hidden" id="timer">
           <h1>Timer</h1>
           <div class="timer">

@@ -26,8 +26,10 @@ function showAlertWithStopButton(messageText) {
 setAlarmBtn.addEventListener("click", function () {
   const currentTime = new Date();
   const alarmTimeString = alarmTime.value;
+  console.log(alarmTimeString);
   alarmTime.value = "";
   const alarmTimeDate = new Date(alarmTimeString);
+  console.log("alarm time date: ",alarmTimeDate);
 
   const timeDiff = alarmTimeDate.getTime() - currentTime.getTime();
 
